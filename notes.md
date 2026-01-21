@@ -96,3 +96,46 @@ export default App;
   ```
 
   > `map()` is js method. not want to write about it here
+
+## Props in React:-
+
+- Props or Properties are arguments passed into react compnents.
+- Props allow us to pass data from parent to child component
+- Props are passed to components via HTML attributes
+
+  ```js
+  const App = () => {
+    return (
+      <User
+        img="https:/sdckshfkscxh/cjksfh"
+        name="Priyansu"
+        age={27}
+        isMarried={false}
+        hobbies={["Programming"]}
+      />
+    );
+  };
+
+  export default App;
+  ```
+
+  ```js
+  // User.jsx
+
+  const User = ({ img, nam, age, isMarried, hobbies }) => {
+    return (
+      <div>
+        <img src={img} alt={name} />
+        <h2>{name}</h2>
+        <h3>{age}</h3>
+        <h3>{isMarried}</h3>
+        <h3>{hobbies}</h3>
+      </div>
+    );
+  };
+
+  export default User;
+  ```
+
+  > We can use also props instead of all names like img, name, age, isMarried, hobbies.
+  > We have to write like props.name, props.age and etc

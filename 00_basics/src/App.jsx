@@ -7,11 +7,12 @@ import WelcomeMessage from "./components/WelcomeMessage";
 import Greeting from "./components/Greeting";
 import ProductInfo from "./components/ProductInfo";
 import UserList from "./components/UserList";
+import Person from "./components/Person";
 
 const App = () => {
   return (
     <div>
-      <UserList />
+      <Person name="Priyansu" age={24} />
     </div>
   );
 };
