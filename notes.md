@@ -49,3 +49,28 @@
 
   export { Home, Navbar };
   ```
+
+#### JSX Rules:-
+
+- JSX must return a single parent element.
+- Must be properly closed.
+- Must written using camelCase
+
+### Expressions in JSX:-
+
+- With JSX we can write expressions inside curly braces.
+- The expressions can be react variable or property or any other valid Javascript expression.
+- JSX will execute the expression and return the result.
+- Can be written using `{}`
+
+> Example:-
+
+```js
+const App = () => {
+  return <p>{2 + 2}</p>;
+};
+
+export default App;
+```
+
+- We can pass variables and also functions using expressions.
