@@ -6,12 +6,12 @@ import Header from "./components/Header";
 import WelcomeMessage from "./components/WelcomeMessage";
 import Greeting from "./components/Greeting";
 import ProductInfo from "./components/ProductInfo";
+import UserList from "./components/UserList";
 
 const App = () => {
   return (
     <div>
-      <Greeting />
-      <ProductInfo />
+      <UserList />
     </div>
   );
 };

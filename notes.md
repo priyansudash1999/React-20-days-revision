@@ -94,3 +94,5 @@ export default App;
     );
   };
   ```
+
+  > `map()` is js method. not want to write about it here
