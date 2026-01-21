@@ -8,11 +8,16 @@ import Greeting from "./components/Greeting";
 import ProductInfo from "./components/ProductInfo";
 import UserList from "./components/UserList";
 import Person from "./components/Person";
+import Greetings from "./components/Greetings";
+import Weather from "./components/Weather";
+import UserStatus from "./components/UserStatus";
 
 const App = () => {
   return (
     <div>
-      <Person name="Priyansu" age={24} />
+      <Greetings timeOfDay={"Morning"} />
+      <UserStatus isAdmin={false} loggedIn={true} />
+      <Weather temp={16} />
     </div>
   );
 };
