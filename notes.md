@@ -74,3 +74,23 @@ export default App;
 ```
 
 - We can pass variables and also functions using expressions.
+
+## Lists in React-
+
+- In react, we will render lists with some type of loop.
+- The `js map()` array method is generally preferred method.
+
+  ```js
+  const App = () => {
+    const nums = [1, 2, 3, 4, 5];
+    return (
+      <main>
+        {nums.map((num) => (
+          <ul key={Math.random()}>
+            <li>{num}</li>
+          </ul>
+        ))}
+      </main>
+    );
+  };
+  ```
