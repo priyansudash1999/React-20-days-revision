@@ -139,3 +139,22 @@ export default App;
 
   > We can use also props instead of all names like img, name, age, isMarried, hobbies.
   > We have to write like props.name, props.age and etc
+
+## Conditional Rendering
+
+- Conditional rendering allows us to dynamically display different UI components or content based on specific conditions.
+- This enables us to create more interactive and responsive user experiences
+
+  ```js
+  const ValidPassword = () => <h1>VALID PASSWORD</h1>;
+
+  const InValidPassword = () => <h1>INVALID PASSWORD</h1>;
+
+  const Password = ({ isValid }) => {
+    return isValid ? <ValidPassword /> : <InValidPassword />;
+  };
+
+  const App = () => {
+    return <Password isValid={true} />;
+  };
+  ```
